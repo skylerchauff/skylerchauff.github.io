@@ -5,16 +5,29 @@
     <title>I Scream For Ice Cream!</title>
   </head>
   <body>
-    <h1>Most Popular Ice Cream Flavors</h1>
-    <img width = "50px" src = "http://pngimg.com/upload/cookie_PNG13656.png">
-    <img height = "100px" src = "http://static6.businessinsider.com/image/55918b77ecad04a3465a0a63/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg">
-    <table>
-      <tr><th>Rank</th><th>Flavor</th></tr>
-      <tr><td>1</td><td>Vanilla</td></tr>
-      <tr><td>2</td><td>Strawberry</td></tr>
-      <tr><td>3</td><td>Chocolate</td></tr>
-      <tr><td>4</td><td>Cookies and Cream</td></tr>
-      <tr><td>5</td><td>Mint Chocolate Chip</td></tr>
+  </h1>
+        <script type="text/javascript">
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var suffix = "AM";
+
+            if (minutes < 10)
+                minutes = "0" + minutes;
+
+            if (hours >= 12) {
+                suffix = "PM";
+                hours = hours - 12;
+            }
+            if (hours == 0) {
+                hours = 12;
+            }
+
+            document.write("<b><div id='d1'>" + hours + ":" + 
+                minutes + " " + suffix + "</div></b>");
+
+        </script>
+    </body>
     </table>
   </body>
 </html>
